@@ -1,11 +1,10 @@
+/* Color: Dark Green: #222C23 */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
 
 body {
   font-family: 'Montserrat', sans-serif;
 }
-
-
 
 /* Home Page Style */
 .ww-home-page {
@@ -14,31 +13,46 @@ body {
   background-position: 70%;
   height: 100vh;
   min-height: 480px;
-  max-height: 1080px;}
-  .ww-home-page .ww-wedding-announcement {
-    width: 100%;
-    margin: 0 auto;
-    height: 100%;
-    color: #fff;
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
-    letter-spacing: 2px; }
-    .ww-home-page .ww-wedding-announcement .ww-announcement-container {
-      max-width: 600px;
-      margin: 0 auto;
-      top: 0;
-      z-index: 999;}
-    .ww-home-page .ww-wedding-announcement img {
-      max-height: 350px;
-      width: auto; }
-      @media (max-width: 480px) {
-        .ww-home-page .ww-wedding-announcement img {
-          max-height: 250px;
-          width: auto; } }
-    .ww-home-page .ww-wedding-announcement .ww-couple-name {
-      font-size: 70px; }
-      @media (max-width: 576px) {
-        .ww-home-page .ww-wedding-announcement .ww-couple-name {
-          font-size: 50px; } }
+  max-height: 1080px;
+}
+
+.ww-home-page .ww-wedding-announcement {
+  width: 100%;
+  margin: 0 auto;
+  height: 100%;
+  color: #fff;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
+  letter-spacing: 2px;
+}
+
+.ww-home-page .ww-wedding-announcement .ww-announcement-container {
+  max-width: 600px;
+  margin: 0 auto;
+  top: 0;
+  z-index: 999;
+}
+
+.ww-home-page .ww-wedding-announcement img {
+  max-height: 350px;
+  width: auto;
+}
+
+@media (max-width: 480px) {
+  .ww-home-page .ww-wedding-announcement img {
+    max-height: 250px;
+    width: auto;
+  }
+}
+
+.ww-home-page .ww-wedding-announcement .ww-couple-name {
+  font-size: 70px;
+}
+
+@media (max-width: 576px) {
+  .ww-home-page .ww-wedding-announcement .ww-couple-name {
+    font-size: 50px;
+  }
+}
 
 .ww-home-page:before {
   content: "";
@@ -49,34 +63,42 @@ body {
   max-height: 1080px;
   position: absolute;
   left: 0;
-  top: 0; }
+  top: 0;
+}
 
 /* Nav Bar Style */
-
-.ww-nav-bar{
+.ww-nav-bar {
   background-color: #d0ded0;
 }
 
 .ww-nav-bar .nav-item {
   font-size: 18px;
   padding: 5px 0 5px 16px;
-  font-weight: 500; }
+  font-weight: 500;
+}
 
 /* Wedding Event Style */
 .ww-wedding-event ul {
   list-style: none;
-  padding-left: 0; }
+  padding-left: 0;
+}
 
 /* Couple Friends Style  */
 .ww-couple-friends .carousel {
-  padding: 40px 0; }
+  padding: 40px 0;
+}
 
 .ww-couple-friends .carousel-indicators {
-  bottom: 0px; }
-  .ww-couple-friends .carousel-indicators li {
-    background-color: #6c757d; }
-  .ww-couple-friends .carousel-indicators .active {
-    background-color: #f58a77; }
+  bottom: 0px;
+}
+
+.ww-couple-friends .carousel-indicators li {
+  background-color: #6c757d;
+}
+
+.ww-couple-friends .carousel-indicators .active {
+  background-color: #f58a77;
+}
 
 /* Photo Gallery Style */
 .ww-photo-gallery .ww-category-filter a {
@@ -85,57 +107,85 @@ body {
   font-size: 14px;
   text-transform: uppercase;
   letter-spacing: 1px;
-  border-radius: 3px; }
+  border-radius: 3px;
+}
 
 .ww-photo-gallery .ww-gallery {
-  min-height: 500px; }
+  min-height: 500px;
+}
 
 .ww-photo-gallery .card-columns .card {
   border: none;
   margin-bottom: 15px;
-  border-radius: none; }
+  border-radius: none;
+}
 
 @media (max-width: 992px) {
   .ww-photo-gallery .card-columns {
     -moz-column-count: 2;
-         column-count: 2; } }
+    column-count: 2;
+  }
+}
 
 @media (max-width: 576px) {
   .ww-photo-gallery .card-columns {
     -moz-column-count: 1;
-         column-count: 1; } }
+    column-count: 1;
+  }
+}
 
 /* RSVP Style */
 .ww-rsvp-detail {
   background: url("../images/rsvp-img.jpg") no-repeat center center;
   background-size: cover;
   min-height: 500px;
-  position: relative; }
+  position: relative;
+}
+
+.ww-rsvp-detail .ww-rsvp-form {
+  padding-left: 20%;
+}
+
+@media (max-width: 768px) {
   .ww-rsvp-detail .ww-rsvp-form {
-    padding-left: 20%; }
-    @media (max-width: 768px) {
-      .ww-rsvp-detail .ww-rsvp-form {
-        padding-left: 10%; } }
-    @media (max-width: 576px) {
-      .ww-rsvp-detail .ww-rsvp-form {
-        padding-left: 0%; } }
-    .ww-rsvp-detail .ww-rsvp-form .form-control {
-      background-color: rgba(222, 222, 222, 0.2);
-      color: #fff;
-      border: 1px solid rgba(255, 255, 255, 0.6); }
-    .ww-rsvp-detail .ww-rsvp-form .form-control::-moz-placeholder {
-      color: #dedede; }
-    .ww-rsvp-detail .ww-rsvp-form .form-control:-ms-input-placeholder {
-      color: #dedede; }
-    .ww-rsvp-detail .ww-rsvp-form .form-control::placeholder {
-      color: #dedede; }
-    .ww-rsvp-detail .ww-rsvp-form select.form-control option {
-      background: rgba(0, 0, 0, 0.3);
-      color: #fff; }
-    .ww-rsvp-detail .ww-rsvp-form .btn-submit {
-      background-color: rgba(245, 138, 119, 0.8);
-      padding: 0.45rem 1.5rem;
-      border: 0; }
+    padding-left: 10%;
+  }
+}
+
+@media (max-width: 576px) {
+  .ww-rsvp-detail .ww-rsvp-form {
+    padding-left: 0%;
+  }
+}
+
+.ww-rsvp-detail .ww-rsvp-form .form-control {
+  background-color: rgba(222, 222, 222, 0.2);
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+}
+
+.ww-rsvp-detail .ww-rsvp-form .form-control::-moz-placeholder {
+  color: #dedede;
+}
+
+.ww-rsvp-detail .ww-rsvp-form .form-control:-ms-input-placeholder {
+  color: #dedede;
+}
+
+.ww-rsvp-detail .ww-rsvp-form .form-control::placeholder {
+  color: #dedede;
+}
+
+.ww-rsvp-detail .ww-rsvp-form select.form-control option {
+  background: rgba(0, 0, 0, 0.3);
+  color: #fff;
+}
+
+.ww-rsvp-detail .ww-rsvp-form .btn-submit {
+  background-color: rgba(245, 138, 119, 0.8);
+  padding: 0.45rem 1.5rem;
+  border: 0;
+}
 
 .ww-rsvp-detail:before {
   content: "";
@@ -144,26 +194,37 @@ body {
   height: 100%;
   position: absolute;
   left: 0;
-  top: 0; }
+  top: 0;
+}
 
 /* Footer Style */
 .ww-footer a.credit {
   color: inherit;
   border-bottom: 1px dashed;
   text-decoration: none;
-  cursor: pointer; }
+  cursor: pointer;
+}
 
 /* Common Style */
-.ww-title {}
+.intro-bonito {
+  padding: 64px 0 0;
+}
 
 .ww-section {
-  padding: 64px 0 0; }
+  padding: 24px 0 0;
+}
+
+.intro-bonito {
+  padding: 64px 0 0;
+}
 
 .btn-primary {
-  color: #fff; }
+  color: #fff;
+}
 
 .btn-outline-primary:hover {
-  color: #fff; }
+  color: #fff;
+}
 
 .slogan {
   position: absolute;
@@ -172,7 +233,7 @@ body {
   bottom: 0px;
   text-align: center;
   margin: 0 auto;
-  width:100%;
+  width: 100%;
   font-weight: 700;
   font-size: 20px;
   font-family: 'Krona One', sans-serif;
@@ -187,6 +248,32 @@ body {
   padding: 0 10vw;
 }
 
+.semi-formal {
+  font-size: 18px;
+}
+
+.wed-confirm {
+  font-size: 24px;
+  padding: 0 10vw;
+  justify-content: center;
+  width: unset;
+}
+
+#confirmation {
+  padding-bottom: 24px;
+  font-family: 'Krona One';
+  background-color: #E7F2E5;
+  margin: 24px;
+}
+
+@media (min-width: 480px) {
+  #confirmation {
+    max-width: 700px;
+    margin: 24px auto;
+  }
+}
+
+
 .section-name {
   padding: 16px;
   margin: 0 auto;
@@ -196,24 +283,64 @@ body {
   border-top: 1px solid #E7F2E5;
 }
 
+.navbar .container {
+  justify-content: center;
+}
+
+.intro-bonito {
+  padding-bottom: 60px;
+  font-family: 'Krona One';
+  background-color: #E7F2E5;
+}
+
 h4 {
   font-family: 'Krona One', sans-serif;
 }
 
-.ww-wedding-event p {
+.ww-wedding-event {
   color: #7a7a7a;
   font-size: 20px;
+}
+
+.__event h4 {
+  font-size: 28px;
+  color: #222C23;
 }
 
 .__event {
   padding: 24px;
 }
 
-.__event-main {
+.__event p {
+  color: #9a9a9a;
 }
 
-.intro-bonito {
-  padding-bottom: 60px;
-  font-family:'Krona One';
-  background-color: #d0ded0;
+.__event-main {}
+
+.__hotels {
+  margin: 8px 0;
+}
+
+.hotel-h4 {
+  font-size: 24px;
+  color: #222C23;
+  font-family: 'Krona One', sans-serif;
+}
+
+.hotel-map {
+  font-size: 18px;
+  text-decoration: underline;
+}
+
+.hotel-price {
+  color: #aaaaaa;
+}
+
+.hotels-code {
+  padding: 0 12px;
+  margin-bottom: 16px;
+}
+
+a {
+  color: #99B494;
 }
